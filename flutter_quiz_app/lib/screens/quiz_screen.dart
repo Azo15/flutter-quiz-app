@@ -103,9 +103,9 @@ class _QuizScreenState extends State<QuizScreen> {
         width: double.infinity,
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFF0F172A), Color(0xFF1E1B4B)],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
+            colors: [Color(0xFF6A11CB), Color(0xFF2575FC)],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
           ),
         ),
         padding: const EdgeInsets.all(20.0),
@@ -120,25 +120,25 @@ class _QuizScreenState extends State<QuizScreen> {
                   style: const TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w600,
-                    color: Color(0xFFA5B4FC), // Indigo 200
+                    color: Colors.white, // Changed to white for better contrast
                   ),
                 ),
                 AnimatedContainer(
                   duration: const Duration(seconds: 1),
                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                   decoration: BoxDecoration(
-                    color: isPulseTime ? Colors.red.withOpacity(0.2) : Colors.white.withOpacity(0.1),
+                    color: isPulseTime ? Colors.redAccent.withOpacity(0.8) : Colors.white.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                      color: isPulseTime ? Colors.redAccent : Colors.transparent,
+                      color: isPulseTime ? Colors.white : Colors.white.withOpacity(0.5),
                     ),
                   ),
                   child: Text(
                     "Kalan Süre: $timeLeft saniye",
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
-                      color: isPulseTime ? Colors.redAccent : Colors.white,
+                      color: Colors.white,
                     ),
                   ),
                 ),
@@ -153,12 +153,12 @@ class _QuizScreenState extends State<QuizScreen> {
                     Container(
                       padding: const EdgeInsets.all(25),
                       decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.05),
+                        color: Colors.white.withOpacity(0.15),
                         borderRadius: BorderRadius.circular(25),
-                        border: Border.all(color: Colors.white.withOpacity(0.1)),
+                        border: Border.all(color: Colors.white.withOpacity(0.4)),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(0.2),
+                            color: Colors.black.withOpacity(0.15),
                             blurRadius: 20,
                             offset: const Offset(0, 10),
                           ),
@@ -180,17 +180,17 @@ class _QuizScreenState extends State<QuizScreen> {
                       bool isCorrect = index == question.correctOptionIndex;
                       
                       Color getButtonColor() {
-                        if (!showCorrectAnswer) return Colors.white.withOpacity(0.05);
-                        if (isCorrect) return Colors.green.withOpacity(0.3);
-                        if (isSelected && !isCorrect) return Colors.red.withOpacity(0.3);
-                        return Colors.white.withOpacity(0.02);
+                        if (!showCorrectAnswer) return Colors.white.withOpacity(0.1);
+                        if (isCorrect) return Colors.green.withOpacity(0.5);
+                        if (isSelected && !isCorrect) return Colors.red.withOpacity(0.5);
+                        return Colors.white.withOpacity(0.05);
                       }
 
                       Color getBorderColor() {
-                        if (!showCorrectAnswer) return Colors.white.withOpacity(0.1);
+                        if (!showCorrectAnswer) return Colors.white.withOpacity(0.3);
                         if (isCorrect) return Colors.greenAccent;
                         if (isSelected && !isCorrect) return Colors.redAccent;
-                        return Colors.transparent;
+                        return Colors.white.withOpacity(0.1);
                       }
 
                       return Padding(
