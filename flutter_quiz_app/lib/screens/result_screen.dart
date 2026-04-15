@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class ResultScreen extends StatelessWidget {
   final int score;
@@ -37,7 +36,7 @@ class ResultScreen extends StatelessWidget {
           children: [
             Text(
               "Quiz Tamamlandı!",
-              style: GoogleFonts.inter(
+              style: const TextStyle(
                 fontSize: 32,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
@@ -59,17 +58,17 @@ class ResultScreen extends StatelessWidget {
               ),
               child: Text(
                 "$score / $totalQuestions",
-                style: GoogleFonts.inter(
+                style: const TextStyle(
                   fontSize: 48,
                   fontWeight: FontWeight.w900,
-                  color: const Color(0xFFA5B4FC),
+                  color: Color(0xFFA5B4FC),
                 ),
               ),
             ),
             const SizedBox(height: 20),
             Text(
               feedback,
-              style: GoogleFonts.inter(
+              style: const TextStyle(
                 fontSize: 20,
                 color: Colors.white70,
               ),
@@ -87,9 +86,9 @@ class ResultScreen extends StatelessWidget {
                 elevation: 10,
                 shadowColor: const Color(0xFF6366F1).withOpacity(0.5),
               ),
-              child: Text(
+              child: const Text(
                 "Yeniden Başla",
-                style: GoogleFonts.inter(
+                style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                 ),

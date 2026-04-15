@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../models/question.dart';
 import '../data/questions_db.dart';
 import 'result_screen.dart';
@@ -104,9 +103,9 @@ class _QuizScreenState extends State<QuizScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Quiz Uygulaması",
-          style: GoogleFonts.inter(fontWeight: FontWeight.bold),
+          style: TextStyle(fontWeight: FontWeight.bold),
         ),
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -130,10 +129,10 @@ class _QuizScreenState extends State<QuizScreen> {
               children: [
                 Text(
                   "Soru ${currentQuestionIndex + 1}/${questionsDb.length}",
-                  style: GoogleFonts.inter(
+                  style: const TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w600,
-                    color: const Color(0xFFA5B4FC), // Indigo 200
+                    color: Color(0xFFA5B4FC), // Indigo 200
                   ),
                 ),
                 AnimatedContainer(
@@ -148,7 +147,7 @@ class _QuizScreenState extends State<QuizScreen> {
                   ),
                   child: Text(
                     "Kalan Süre: $timeLeft",
-                    style: GoogleFonts.inter(
+                    style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                       color: isPulseTime ? Colors.redAccent : Colors.white,
@@ -179,7 +178,7 @@ class _QuizScreenState extends State<QuizScreen> {
                       ),
                       child: Text(
                         question.text,
-                        style: GoogleFonts.inter(
+                        style: const TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.w500,
                           height: 1.4,
@@ -226,7 +225,7 @@ class _QuizScreenState extends State<QuizScreen> {
                                 Expanded(
                                   child: Text(
                                     question.options[index],
-                                    style: GoogleFonts.inter(
+                                    style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
                                     ),
