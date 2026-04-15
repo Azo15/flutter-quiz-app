@@ -17,13 +17,13 @@ Proje **Glassmorphism** (Cam efekti) hissi veren, **Purple & Blue Vibrant (Vurgu
 
 | # | İster / Özellik | Durum | Detaylar |
 | - | -------------- | ----- | --------- |
-| **1.** | Soru-Cevap Yapısı (60p) | ✅ Tamamlandı | Uygulama, model tabanlı 10 adet soru içeren stabil bir altyapıya sahiptir. |
-| **2.** | Şık Seçenekleri (60p) | ✅ Tamamlandı | Her soru için tam olarak 5 adet tıklanabilir animasyonlu (%100 uyumlu) şık bulunmaktadır. |
-| **3.** | Süre Sınırı / Sayacı (60p) | ✅ Tamamlandı | Ekranın üst köşesinde yer alan sayaç (saniye) vasıtasıyla her soruya **15 saniye** sınırlama konulmuştur. Süre bittiğinde şık seçimi otomatik olarak engellenir ve bir sonraki soruya atlanır. Akıllı uyarı efekti (5 saniye kala kırmızı olur) eklidir. |
-| **4.** | Puanlama Sistemi (20p) | ✅ Tamamlandı | Seçilen şıkkın doğru olması halinde arka planda şeffaf bir yeşil ton görünür ve skoru arttırır. |
-| **5.** | Toplam Puanın Gösterimi (20p)| ✅ Tamamlandı | Sorular bittikten sonra sonuç (ResultScreen) ekranı açılır ve **"Skorunuz: X / Y"** şeklinde net mesaj verir. |
-| **6.** | Quiz Sonu Ekranı (20p) | ✅ Tamamlandı | Akıcı bir geçiş ile (Navigation) "Quiz Tamamlandı!" ibaresiyle öğrenciye sonuçlar sunulur. |
-| **7.** | Yeniden Başlatma Tuşu (20p) | ✅ Tamamlandı | State resetlemesi tam yapılarak oluşturulan "Yeniden Başla" butonu yardımıyla uygulamayı yeniden başlatır ve skoru ile indeksi problemsiz sıfırlar. |
+| **1.** | Soru-Cevap Yapısı  | ✅ Tamamlandı | Uygulama, model tabanlı 10 adet soru içeren stabil bir altyapıya sahiptir. |
+| **2.** | Şık Seçenekleri  | ✅ Tamamlandı | Her soru için tam olarak 5 adet tıklanabilir animasyonlu (%100 uyumlu) şık bulunmaktadır. |
+| **3.** | Süre Sınırı / Sayacı  | ✅ Tamamlandı | Ekranın üst köşesinde yer alan sayaç (saniye) vasıtasıyla her soruya **15 saniye** sınırlama konulmuştur. Süre bittiğinde şık seçimi otomatik olarak engellenir ve bir sonraki soruya atlanır. Akıllı uyarı efekti (5 saniye kala kırmızı olur) eklidir. |
+| **4.** | Puanlama Sistemi  | ✅ Tamamlandı | Seçilen şıkkın doğru olması halinde arka planda şeffaf bir yeşil ton görünür ve skoru arttırır. |
+| **5.** | Toplam Puanın Gösterimi | ✅ Tamamlandı | Sorular bittikten sonra sonuç (ResultScreen) ekranı açılır ve **"Skorunuz: X / Y"** şeklinde net mesaj verir. |
+| **6.** | Quiz Sonu Ekranı  | ✅ Tamamlandı | Akıcı bir geçiş ile (Navigation) "Quiz Tamamlandı!" ibaresiyle öğrenciye sonuçlar sunulur. |
+| **7.** | Yeniden Başlatma Tuşu  | ✅ Tamamlandı | State resetlemesi tam yapılarak oluşturulan "Yeniden Başla" butonu yardımıyla uygulamayı yeniden başlatır ve skoru ile indeksi problemsiz sıfırlar. |
 
 ---
 
