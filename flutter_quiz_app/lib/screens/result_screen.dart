@@ -26,7 +26,7 @@ class ResultScreen extends StatelessWidget {
         width: double.infinity,
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFF0F172A), Color(0xFF1E1B4B)],
+            colors: [Color(0xFF6A11CB), Color(0xFF2575FC)],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
@@ -46,12 +46,13 @@ class ResultScreen extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(40),
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.1),
+                color: Colors.white.withOpacity(0.15),
                 shape: BoxShape.circle,
+                border: Border.all(color: Colors.white.withOpacity(0.4), width: 2),
                 boxShadow: [
                   BoxShadow(
-                    color: const Color(0xFF6366F1).withOpacity(0.5),
-                    blurRadius: 50,
+                    color: Colors.black.withOpacity(0.1),
+                    blurRadius: 30,
                     spreadRadius: 10,
                   ),
                 ],
@@ -61,7 +62,7 @@ class ResultScreen extends StatelessWidget {
                 style: const TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.w900,
-                  color: Color(0xFFA5B4FC),
+                  color: Colors.white,
                 ),
               ),
             ),
@@ -82,14 +83,14 @@ class ResultScreen extends StatelessWidget {
                 );
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF6366F1),
-                foregroundColor: Colors.white,
+                backgroundColor: Colors.white,
+                foregroundColor: const Color(0xFF2575FC),
                 padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
                 elevation: 10,
-                shadowColor: const Color(0xFF6366F1).withOpacity(0.5),
+                shadowColor: Colors.black.withOpacity(0.2),
               ),
               child: const Text(
                 "Yeniden Başla",
