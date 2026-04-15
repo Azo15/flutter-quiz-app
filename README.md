@@ -3,7 +3,11 @@
 Bu proje, Flutter kullanılarak geliştirilmiş, etkileşimli, dinamik skorlamaya sahip ve estetik açıdan zengin (Premium UI) bir mobil "Quiz (Bilgi Yarışması)" uygulamasıdır. Mobil Uygulama Geliştirme dersi için hazırlanan ödev isterlerini (%100 oranında) eksiksiz karşılamak üzere tasarlanmıştır.
 
 ## 🌟 Ekran Görüntüsü / Görünüm
-**(Burası projenin GitHub'a eklenmesi durumunda uygulamanın çalıştığını gösteren görseller konulacak alandır.)**
+
+<img width="1919" height="1025" alt="image" src="https://github.com/user-attachments/assets/6eb27161-ec47-4b3d-ab3a-24e65c43ada4" />
+
+
+<img width="1881" height="1023" alt="image" src="https://github.com/user-attachments/assets/0c185e2f-d6e0-4932-b72f-a43ec613da4b" />
 
 Proje **Glassmorphism** (Cam efekti) hissi veren, **Purple & Blue Vibrant (Vurgulu Mor ve Mavi)** gradient geçişleri olan ultra-modern bir arayüz tasarımına sahiptir. Sıkıcı ve düz bir tasarımdan ziyade kullanıcının gözüne hitap eden bir UX/UI sunar. Tıklamalar, animasyonlar ve gölge detayları profesyonel bir hassasiyetle kodlanmıştır.
 
