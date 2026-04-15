@@ -43,21 +43,7 @@ class ResultScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            Container(
-              padding: const EdgeInsets.all(40),
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.15),
-                shape: BoxShape.circle,
-                border: Border.all(color: Colors.white.withOpacity(0.4), width: 2),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.1),
-                    blurRadius: 30,
-                    spreadRadius: 10,
-                  ),
-                ],
-              ),
-              child: Text(
+              Text(
                 "Skorunuz: $score / $totalQuestions",
                 style: const TextStyle(
                   fontSize: 32,
@@ -65,7 +51,6 @@ class ResultScreen extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-            ),
             const SizedBox(height: 20),
             Text(
               feedback,
