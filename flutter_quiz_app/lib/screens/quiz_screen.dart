@@ -134,7 +134,7 @@ class _QuizScreenState extends State<QuizScreen> {
                     ),
                   ),
                   child: Text(
-                    "Kalan Süre: $timeLeft",
+                    "Kalan Süre: $timeLeft saniye",
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,

@@ -57,9 +57,9 @@ class ResultScreen extends StatelessWidget {
                 ],
               ),
               child: Text(
-                "$score / $totalQuestions",
+                "Skorunuz: $score / $totalQuestions",
                 style: const TextStyle(
-                  fontSize: 48,
+                  fontSize: 32,
                   fontWeight: FontWeight.w900,
                   color: Color(0xFFA5B4FC),
                 ),
