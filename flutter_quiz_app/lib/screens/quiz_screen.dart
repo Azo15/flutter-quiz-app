@@ -67,7 +67,6 @@ class _QuizScreenState extends State<QuizScreen> {
               pageBuilder: (context, animation, secondaryAnimation) => ResultScreen(
                 score: score,
                 totalQuestions: questionsDb.length,
-                onRestart: restartQuiz,
               ),
               transitionsBuilder: (context, animation, secondaryAnimation, child) {
                 return FadeTransition(opacity: animation, child: child);
@@ -77,17 +76,6 @@ class _QuizScreenState extends State<QuizScreen> {
         }
       });
     });
-  }
-
-  void restartQuiz() {
-    setState(() {
-      currentQuestionIndex = 0;
-      score = 0;
-    });
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(builder: (context) => const QuizScreen()),
-    );
   }
 
   @override

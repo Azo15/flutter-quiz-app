@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
+import 'quiz_screen.dart';
+
 class ResultScreen extends StatelessWidget {
   final int score;
   final int totalQuestions;
-  final VoidCallback onRestart;
 
   const ResultScreen({
     super.key,
     required this.score,
     required this.totalQuestions,
-    required this.onRestart,
   });
 
   @override
@@ -75,7 +75,12 @@ class ResultScreen extends StatelessWidget {
             ),
             const SizedBox(height: 50),
             ElevatedButton(
-              onPressed: onRestart,
+              onPressed: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => const QuizScreen()),
+                );
+              },
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xFF6366F1),
                 foregroundColor: Colors.white,
