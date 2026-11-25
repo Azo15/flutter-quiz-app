@@ -1,0 +1,30 @@
+name: Publish Flutter demo
+on:
+  push:
+    branches: [codex/web-demo]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: flutter-demo-pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Flutter 3.41.9
+        run: git clone --depth 1 --branch 3.41.9 https://github.com/flutter/flutter.git "$RUNNER_TEMP/flutter"
+      - name: Build original Flutter app
+        working-directory: flutter_quiz_app
+        run: '"$RUNNER_TEMP/flutter/bin/flutter" build web --release --base-href /flutter-quiz-app/'
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: flutter_quiz_app/build/web
+      - uses: actions/deploy-pages@v4
+        id: deploy
