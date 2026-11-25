@@ -11,11 +11,8 @@ concurrency:
   group: flutter-demo-pages
   cancel-in-progress: false
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - name: Install Flutter 3.41.9
@@ -26,5 +23,12 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: flutter_quiz_app/build/web
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
       - uses: actions/deploy-pages@v4
         id: deploy
